@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\console.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\rentalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\rentalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\consoleusagebyclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\consoleusagebyclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\accessory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\accessory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\gameplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\gameplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentalItem.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\RentalItem.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\RentalItem.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\RentalItem.cs",
+              "RelativeToolTip": "Core\\Entities\\RentalItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:02:36.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rental.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Rental.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Rental.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Rental.cs*",
+              "RelativeToolTip": "Core\\Entities\\Rental.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:02:09.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Client.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Client.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Client.cs*",
+              "RelativeToolTip": "Core\\Entities\\Client.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:01:43.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsoleUsageByClient.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\ConsoleUsageByClient.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\ConsoleUsageByClient.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\ConsoleUsageByClient.cs*",
+              "RelativeToolTip": "Core\\Entities\\ConsoleUsageByClient.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:01:14.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Accessory.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Accessory.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Accessory.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Accessory.cs*",
+              "RelativeToolTip": "Core\\Entities\\Accessory.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:00:43.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GamePlatform.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\GamePlatform.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\GamePlatform.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\GamePlatform.cs*",
+              "RelativeToolTip": "Core\\Entities\\GamePlatform.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T15:00:12.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Console.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Console.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Console.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Console.cs*",
+              "RelativeToolTip": "Core\\Entities\\Console.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T14:59:41.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Platform.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Platform.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Platform.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Platform.cs*",
+              "RelativeToolTip": "Core\\Entities\\Platform.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T14:59:09.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Entities\\Game.cs*",
+              "RelativeToolTip": "Core\\Entities\\Game.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T14:58:17.894Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

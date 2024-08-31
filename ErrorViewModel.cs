@@ -1,4 +1,4 @@
-namespace LocadoraDigital.Models
+namespace LocadoraDigital
 {
     public class ErrorViewModel
     {
