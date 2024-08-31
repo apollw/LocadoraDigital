@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LocadoraDigital")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2e15351e5a10381118a5cc96f3823e75b8cd701")]
 [assembly: System.Reflection.AssemblyProductAttribute("LocadoraDigital")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LocadoraDigital")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
