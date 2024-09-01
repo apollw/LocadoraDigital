@@ -1,6 +1,6 @@
 ﻿namespace LocadoraDigital.Core.Entities
 {
-    public class Console
+    public class ConsoleDevice
     {
         private int _id;
         private string _name;
