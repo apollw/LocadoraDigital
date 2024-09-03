@@ -1,0 +1,15 @@
+﻿@model LocadoraDigital.ViewModels.ClientViewModel
+
+@{
+    ViewData["Title"] = "Delete Client";
+}
+
+<h2>Delete Client</h2>
+
+<p>Are you sure you want to delete the client @Model.Name?</p>
+
+<form asp-action="DeleteClient" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("ListClients", "Client")" class="btn btn-secondary">Cancel</a>
+</form>
