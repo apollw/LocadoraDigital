@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\infrastructure\\configurations\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:infrastructure\\configurations\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\core\\services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:core\\services\\rentalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,16 +42,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DatabaseConfig.cs",
               "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Infrastructure\\Configurations\\DatabaseConfig.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Configurations\\DatabaseConfig.cs",
               "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Infrastructure\\Configurations\\DatabaseConfig.cs",
               "RelativeToolTip": "Infrastructure\\Configurations\\DatabaseConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T04:18:36.418Z",
+              "WhenOpened": "2024-09-03T05:12:27.847Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T05:08:49.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RentalController.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\API\\Controllers\\RentalController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\RentalController.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\API\\Controllers\\RentalController.cs",
+              "RelativeToolTip": "API\\Controllers\\RentalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T05:08:12.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentalService.cs",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Services\\RentalService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\RentalService.cs",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Core\\Services\\RentalService.cs",
+              "RelativeToolTip": "Core\\Services\\RentalService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T05:07:46.258Z"
             }
           ]
         }

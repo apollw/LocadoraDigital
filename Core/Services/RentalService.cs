@@ -49,10 +49,10 @@ namespace LocadoraDigital.Core.Services
             return rental.Items.Sum(item => item.Game.GetRentalPrice(item.Platform) * item.Days);
         }
 
-        public Rental GetRentalById(int id)
-        {
-            return _rentalRepository .GetById(id);
-        }
+        //public Rental GetRentalById(int id)
+        //{
+        //    return _rentalRepository.GetById(id);
+        //}
 
         public Game GetGameById(int id)
         {
