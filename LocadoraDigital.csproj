@@ -22,4 +22,8 @@
     <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\Interfaces\OutputPorts\" />
+  </ItemGroup>
+
 </Project>
