@@ -2,7 +2,7 @@
 using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
 
-namespace LocadoraDigital.Core.Services
+namespace LocadoraDigital.Core.Interfaces.OutputPorts
 {
     public class FactoryService
     {

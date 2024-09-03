@@ -4,7 +4,7 @@ using LocadoraDigital.Infrastructure.Adapters.Mapping;
 using LocadoraDigital.Infrastructure.Configurations;
 using SQLite;
 
-namespace LocadoraDigital.Core.Services
+namespace LocadoraDigital.Core.Interfaces.OutputPorts
 {
     public class GameService : IGameService
     {

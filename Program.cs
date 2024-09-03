@@ -1,7 +1,7 @@
 using LocadoraDigital.Core.Entities;
 using LocadoraDigital.Core.Factories;
 using LocadoraDigital.Core.Interfaces.InputPorts;
-using LocadoraDigital.Core.Services;
+using LocadoraDigital.Core.Interfaces.OutputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
 using LocadoraDigital.Infrastructure.Configurations;
 

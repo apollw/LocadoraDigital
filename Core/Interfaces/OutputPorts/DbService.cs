@@ -1,7 +1,7 @@
 ﻿using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Configurations;
 
-namespace LocadoraDigital.Core.Services
+namespace LocadoraDigital.Core.Interfaces.OutputPorts
 {
     public class DbService : IDbService
     {
