@@ -1,5 +1,5 @@
 ﻿using SQLite;
-using LocadoraDigital.Core.Entities;
+using LocadoraDigital.Infrastructure.Adapters.Mapping; 
 
 namespace LocadoraDigital.Infrastructure.Configurations
 {
@@ -16,11 +16,18 @@ namespace LocadoraDigital.Infrastructure.Configurations
         {
             if (_dbConnection == null)
             {
+                // Opção 1: Criação do banco na pasta de dados local do aplicativo
                 string localDevicePath = Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
-
                 string dbFileName = "LocadoraDigitalDB.db3";
-                string dbPath = Path.Combine(localDevicePath, dbFileName);
+                string dbPathLocal = Path.Combine(localDevicePath, dbFileName);
+
+                // Opção 2: Criação do banco na área de trabalho do usuário
+                string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                string dbPathDesktop = Path.Combine(desktopPath, dbFileName);
+
+                string dbPath = dbPathDesktop; // Use esta linha para criar o banco na área de trabalho
+                //string dbPath = dbPathLocal; // Use esta linha para criar o banco na pasta de dados local do aplicativo
 
                 _dbConnection = new SQLiteAsyncConnection(dbPath);
 
@@ -28,19 +35,20 @@ namespace LocadoraDigital.Infrastructure.Configurations
             }
         }
 
+
         private async Task CreateTables()
         {
             await _dbConnection.CreateTablesAsync(
                 CreateFlags.AllImplicit,
-                typeof(Accessory),
-                typeof(Client),
-                typeof(Console),
-                typeof(ConsoleUsageByClient),
-                typeof(Game),
-                typeof(GamePlatform),
-                typeof(Platform),
-                typeof(Rental),
-                typeof(RentalItem)
+                typeof(AccessoryTable),
+                typeof(ClientTable),
+                typeof(ConsoleDeviceTable),
+                typeof(ConsoleUsageByClientTable),
+                typeof(GameTable),
+                typeof(GamePlatformTable),
+                typeof(PlatformTable),
+                typeof(RentalTable),
+                typeof(RentalItemTable)
             );
         }
 
