@@ -15,16 +15,7 @@ namespace LocadoraDigital
 
             // Adicione serviços e repositórios
             builder.Services.AddSingleton<IDbService, DbService>();
-            //builder.Services.AddScoped<IRepositoryAccessory, RepositoryAccessory>();
-            //builder.Services.AddScoped<IRepositoryClient, RepositoryClient>();
-            //builder.Services.AddScoped<IRepositoryConsole, RepositoryConsole>();
-            //builder.Services.AddScoped<IRepositoryConsoleUsageByClient, RepositoryConsoleUsageByClient>();
-            //builder.Services.AddScoped<IRepositoryGame, RepositoryGame>();
-            //builder.Services.AddScoped<IRepositoryGamePlatform, RepositoryGamePlatform>();
-            //builder.Services.AddScoped<IRepositoryPlatform, RepositoryPlatform>();
-            //builder.Services.AddScoped<IRepositoryRental, RepositoryRental>();
-            //builder.Services.AddScoped<IRepositoryRentalItem, RepositoryRentalItem>();
-
+            builder.Services.AddTransient<IClientService, ClientService>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
