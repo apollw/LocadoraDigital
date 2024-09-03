@@ -26,8 +26,8 @@ namespace LocadoraDigital.Infrastructure.Configurations
                 string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 string dbPathDesktop = Path.Combine(desktopPath, dbFileName);
 
-                string dbPath = dbPathDesktop; // Use esta linha para criar o banco na área de trabalho
-                //string dbPath = dbPathLocal; // Use esta linha para criar o banco na pasta de dados local do aplicativo
+                string dbPath = dbPathDesktop; 
+                //string dbPath = dbPathLocal; 
 
                 _dbConnection = new SQLiteAsyncConnection(dbPath);
 

@@ -1,5 +1,4 @@
-﻿using LocadoraDigital.Core.Entities;
-using LocadoraDigital.Core.Interfaces.InputPorts;
+﻿using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
 using LocadoraDigital.Infrastructure.Configurations;
 using SQLite;
