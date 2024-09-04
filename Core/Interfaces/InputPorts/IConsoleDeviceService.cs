@@ -12,5 +12,6 @@ namespace LocadoraDigital.Core.Interfaces.InputPorts
 
         // Métodos de Games
         Task AddGamePlatformAsync(GamePlatformTable gamePlatform);
+        Task<IEnumerable<GamePlatformTable>> GetAllGamePlatformsAsync();
     }
 }

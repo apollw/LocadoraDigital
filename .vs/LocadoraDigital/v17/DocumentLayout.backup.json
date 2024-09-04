@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\views\\shared\\creategame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:views\\shared\\creategame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\viewmodels\\consoledeviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:viewmodels\\consoledeviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|c:\\users\\leanderson\\source\\repos\\locadoradigital\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3879F13E-F449-4BFA-AD0E-E42A24D68632}|LocadoraDigital.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\API\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\API\\Controllers\\GameController.cs",
-              "RelativeToolTip": "API\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAD8AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T19:53:04.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateGame.cshtml",
-              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Views\\Shared\\CreateGame.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\CreateGame.cshtml",
-              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Views\\Shared\\CreateGame.cshtml",
-              "RelativeToolTip": "Views\\Shared\\CreateGame.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAuwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-04T19:51:08.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConsoleDeviceViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\ViewModels\\ConsoleDeviceViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ConsoleDeviceViewModel.cs",
-              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\ViewModels\\ConsoleDeviceViewModel.cs",
-              "RelativeToolTip": "ViewModels\\ConsoleDeviceViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T19:51:47.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\ViewModels\\GameViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\GameViewModel.cs",
-              "ToolTip": "C:\\Users\\Leanderson\\source\\repos\\LocadoraDigital\\ViewModels\\GameViewModel.cs",
-              "RelativeToolTip": "ViewModels\\GameViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T19:51:28.479Z",
+              "WhenOpened": "2024-09-04T21:49:33.209Z",
               "EditorCaption": ""
             }
           ]

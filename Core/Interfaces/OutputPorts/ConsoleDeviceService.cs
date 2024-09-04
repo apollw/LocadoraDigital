@@ -48,5 +48,10 @@ namespace LocadoraDigital.Core.Interfaces.OutputPorts
         {
             await _dbConnection.InsertAsync(gamePlatform);
         }
+
+        public async Task<IEnumerable<GamePlatformTable>> GetAllGamePlatformsAsync()
+        {
+            return await _dbConnection.Table<GamePlatformTable>().ToListAsync();   
+        }
     }
 }
