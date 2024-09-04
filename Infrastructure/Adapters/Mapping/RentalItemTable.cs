@@ -29,11 +29,11 @@ namespace LocadoraDigital.Infrastructure.Adapters.Mapping
         [Ignore]
         public Game Game { get; set; }
 
-        // Chave estrangeira para a tabela Platform
-        public int PlatformId { get; set; }
+        // Chave estrangeira para a tabela ConsoleDevice
+        public int ConsoleDeviceId { get; set; }
 
         // Propriedade de navegação (não mapeada diretamente, mas usada para relacionamentos em código)
         [Ignore]
-        public Platform Platform { get; set; }
+        public ConsoleDevice ConsoleDevice { get; set; }
     }
 }

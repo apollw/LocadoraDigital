@@ -37,9 +37,19 @@
         </div>
     </div>
 
-    <div class="row mt-3">
+   @*  <div class="row mt-3">
         <div class="col-md-12">
             <a class="btn btn-danger btn-block" asp-controller="Rental" asp-action="CreateRental">Alugar um Jogo</a>
         </div>
+    </div> *@
+
+    <div class="row mt-3">
+        <div class="col-md-12 text-center">
+            <a href="@Url.Action("CreateRental", "Rental")" class="btn btn-danger" style="display: inline-block; padding: 0; max-width: 200px;">
+                <img src="https://tse1.mm.bing.net/th?id=OIG1.062vlhGYDAEGPrLksRSP&pid=ImgGn" alt="Alugar um Jogo" style="width: 100%; height: auto; border-radius: 5px;">
+            </a>
+        </div>
     </div>
+
+
 </div>
