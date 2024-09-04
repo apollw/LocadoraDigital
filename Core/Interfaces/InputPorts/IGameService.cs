@@ -7,7 +7,7 @@ namespace LocadoraDigital.Core.Interfaces.InputPorts
         Task AddGameAsync(GameTable game);
         Task<GameTable> GetGameByIdAsync(int id);
         Task<IEnumerable<GameTable>> GetAllGamesAsync();
-        Task DeleteGameAsync(int id);
+        Task DeleteGamesAsync(int id);
         Task UpdateGameAsync(GameTable game);
     }
 }
