@@ -1,5 +1,4 @@
-﻿using LocadoraDigital.Core.Entities;
-using LocadoraDigital.Core.Interfaces.InputPorts;
+﻿using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
 using LocadoraDigital.Infrastructure.Configurations;
 using SQLite;
@@ -15,9 +14,9 @@ namespace LocadoraDigital.Core.Interfaces.OutputPorts
             _dbConnection = databaseConfig.GetDbConnection();
         }
 
-        public async Task AddGameAsync(GameTable game)
+        public async Task AddGameAsync(GameTable client)
         {
-            await _dbConnection.InsertAsync(game);
+            await _dbConnection.InsertAsync(client);
         }
 
         public async Task<GameTable> GetGameByIdAsync(int id)
@@ -30,7 +29,7 @@ namespace LocadoraDigital.Core.Interfaces.OutputPorts
             return await _dbConnection.Table<GameTable>().ToListAsync();
         }
 
-        public async Task DeleteGameAsync(int id)
+        public async Task DeleteGamesAsync(int id)
         {
             var game = await _dbConnection.FindAsync<GameTable>(id);
             if (game != null)
@@ -43,7 +42,5 @@ namespace LocadoraDigital.Core.Interfaces.OutputPorts
         {
             await _dbConnection.UpdateAsync(game);
         }
-
     }
 }
-

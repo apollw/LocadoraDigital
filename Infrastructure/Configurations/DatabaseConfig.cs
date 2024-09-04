@@ -35,7 +35,6 @@ namespace LocadoraDigital.Infrastructure.Configurations
             }
         }
 
-
         private async Task CreateTables()
         {
             await _dbConnection.CreateTablesAsync(

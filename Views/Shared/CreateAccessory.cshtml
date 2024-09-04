@@ -1,0 +1,30 @@
+﻿@model LocadoraDigital.ViewModels.AccessoryViewModel
+
+@if (ViewBag.Message != null)
+{
+    <script>
+        alert('@ViewBag.Message');
+    </script>
+}
+
+@{
+    ViewData["Title"] = "Create Accessory";
+}
+
+<h2>Create Accessory</h2>
+
+<form asp-action="CreateAccessory" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ConsoleId">Console</label>
+        <select asp-for="ConsoleId" asp-items="Model.Consoles" class="form-control"></select>
+        <span asp-validation-for="ConsoleId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

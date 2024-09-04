@@ -8,28 +8,37 @@
          alt="Locadora Digital"
          style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
 
-
     <h1 class="display-4">Bem-Vindos à Locadora Digital de Games!</h1>
     <p>Gerencie seus alugueis de jogos e consoles sem nenhum esforço.</p>
 
-    <div class="btn-group mt-4" role="group">
-        <a class="btn btn-primary" asp-controller="Client" asp-action="CreateClient">Novo Cliente</a>
-        <a class="btn btn-secondary" asp-controller="Client" asp-action="ListClients">Listar Clientes [Admin]</a>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Clientes</h3>
+            <div class="btn-group-vertical w-100">
+                <a class="btn btn-primary btn-block" asp-controller="Client" asp-action="CreateClient">Novo Cliente</a>
+                <a class="btn btn-secondary btn-block" asp-controller="Client" asp-action="ListClients">Listar Clientes [Admin]</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Jogos e Consoles</h3>
+            <div class="btn-group-vertical w-100">
+                <a class="btn btn-success btn-block" asp-controller="Game" asp-action="CreateGame">Novo Jogo</a>
+                <a class="btn btn-warning btn-block" asp-controller="ConsoleDevice" asp-action="CreateConsoleDevice">Novo Console</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Plataformas e Acessórios</h3>
+            <div class="btn-group-vertical w-100">
+                <a class="btn btn-info btn-block" asp-controller="Platform" asp-action="CreatePlatform">Nova Plataforma</a>
+                <a class="btn btn-primary btn-block" asp-controller="Accessory" asp-action="CreateAccessory">Novo Acessório</a>
+            </div>
+        </div>
     </div>
 
-    <hr class="my-4">
-
-    <div class="row">
-        <div class="col-md-3">
-            <a class="btn btn-success btn-block" asp-controller="Game" asp-action="CreateGame">Novo Jogo</a>
-        </div>
-        <div class="col-md-3">
-            <a class="btn btn-info btn-block" asp-controller="Platform" asp-action="CreatePlatform">Nova Plataforma</a>
-        </div>
-        <div class="col-md-3">
-            <a class="btn btn-warning btn-block" asp-controller="Console" asp-action="CreateConsole">Novo Console</a>
-        </div>
-        <div class="col-md-3">
+    <div class="row mt-3">
+        <div class="col-md-12">
             <a class="btn btn-danger btn-block" asp-controller="Rental" asp-action="CreateRental">Alugar um Jogo</a>
         </div>
     </div>

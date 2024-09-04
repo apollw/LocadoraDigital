@@ -1,0 +1,25 @@
+﻿@model LocadoraDigital.ViewModels.PlatformViewModel
+
+@if (ViewBag.Message != null)
+{
+    <script>
+        alert('@ViewBag.Message');
+    </script>
+}
+
+@{
+    ViewData["Title"] = "Create Platform";
+}
+
+<h2>Create Platform</h2>
+
+<form asp-action="CreatePlatform" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

@@ -1,8 +1,5 @@
-using LocadoraDigital.Core.Entities;
-using LocadoraDigital.Core.Factories;
 using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Core.Interfaces.OutputPorts;
-using LocadoraDigital.Infrastructure.Adapters.Mapping;
 using LocadoraDigital.Infrastructure.Configurations;
 
 namespace LocadoraDigital
@@ -15,13 +12,15 @@ namespace LocadoraDigital
 
             // Adiciona os serviços de banco de dados
             builder.Services.AddSingleton<DatabaseConfig>();
-
-            // Adicione serviços e repositórios
             builder.Services.AddSingleton<IDbService, DbService>();
-            builder.Services.AddTransient<IClientService, ClientService>();
 
-            builder.Services.AddTransient<FactoryService>();
-            builder.Services.AddTransient<IFactoryService<GameTable>, GameFactory>();
+            //Adicione serviços e repositórios
+            builder.Services.AddTransient<IClientService, ClientService>();
+            builder.Services.AddTransient<IGameService, GameService>();
+            builder.Services.AddTransient<IPlatformService, PlatformService>();
+            builder.Services.AddTransient<IConsoleDeviceService, ConsoleDeviceService>();
+            builder.Services.AddTransient<IAccessoryService, AccessoryService>();
+
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
