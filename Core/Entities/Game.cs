@@ -12,17 +12,7 @@ namespace LocadoraDigital.Core.Entities
         public string Title { get => _title; set => _title = value; }
         public List<GamePlatform> Platforms { get => _platforms; set => _platforms = value; }
 
-        public bool IsAvailableOnPlatform(Platform platform)
-        {
-            return Platforms.Any(gp => gp.PlatformId == platform.Id);
-        }
-
-        public decimal GetRentalPrice(Platform platform)
-        {
-            var gamePlatform = Platforms.FirstOrDefault(gp => gp.PlatformId == platform.Id);
-            return gamePlatform?.DailyPrice ?? 0m;
-        }
-
+        //Uso do Padrão de Design State
         public IGameState State { get; set; } = new AvailableState();
         public void Rent() => State.Rent(this);
         public void Return() => State.Return(this);

@@ -1,9 +1,7 @@
-﻿using LocadoraDigital.Core.Interfaces.OutputPorts;
-using LocadoraDigital.Core.Entities;
+﻿using LocadoraDigital.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
-using LocadoraDigital.Core.Strategies;
 
 namespace LocadoraDigital.Web.Controllers
 {
@@ -33,6 +31,8 @@ namespace LocadoraDigital.Web.Controllers
             IEnumerable<GameTable> gamesTable     = await _gameService.GetAllGamesAsync();
             IEnumerable<ClientTable> clientsTable = await _clientService.GetAllClientsAsync();
 
+            var availableGames = gamesTable;
+
             // Mapeie as tabelas para entidades
             var games   = gamesTable.Select(MapToGame).ToList();
             var clients = clientsTable.Select(MapToClient).ToList();
@@ -48,81 +48,85 @@ namespace LocadoraDigital.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<RentalTable> RentGamesAsync(int clientId, List<RentalItem> rentalItems)
+        public async Task<IActionResult> CreateRental(RentalViewModel viewModel)
         {
             // Verifica se o cliente existe
-            var clientTable = await _clientService.GetClientByIdAsync(clientId);
+            var clientTable = await _clientService.GetClientByIdAsync(viewModel.SelectedClientId);
+            var gamePlatformList = await _consoleDeviceService.GetAllGamePlatformsAsync();
+            gamePlatformList.ToList();
 
             Client client = new Client
             {
-                Id       = clientTable.Id,
-                Name     = clientTable.Name,
-                Phone    = clientTable.Phone,
-                Email    = clientTable.Email,
-                Usages   = clientTable.Usages,
-                Rentals  = clientTable.Rentals,
-                Address  = clientTable.Address,
+                Id = clientTable.Id,
+                Name = clientTable.Name,
+                Phone = clientTable.Phone,
+                Email = clientTable.Email,
+                Usages = clientTable.Usages,
+                Rentals = clientTable.Rentals,
+                Address = clientTable.Address,
                 Password = clientTable.Password
             };
 
             // Inicializa um novo aluguel
             var rentalTable = new RentalTable
             {
-                ClientId = clientId,
+                ClientId = viewModel.SelectedClientId,
                 Client   = client,
                 Date     = DateTime.Now,
                 Items    = new List<RentalItem>()
             };
 
-            // Processa cada item do aluguel
-            foreach (var item in rentalItems)
+            decimal gamePrice;
+            decimal totalPrice = 0;
+
+            // Processa os jogos selecionados
+            foreach (var gameId in viewModel.SelectedGameIds)
             {
-                // Verifica se o jogo e o console existem
-                var gameTable          = await _gameService.GetGameByIdAsync(item.Game.Id);
-                var consoleDeviceTable = await _consoleDeviceService.GetConsoleDeviceByIdAsync(item.ConsoleDevice.Id);
-
-                if (gameTable == null || consoleDeviceTable == null)
-                {
-                    throw new Exception("Jogo ou console não encontrados");
-                }
-
+                var gameTable = await _gameService.GetGameByIdAsync(gameId);
                 Game game = new Game
                 {
-                    Id        = gameTable.Id,
-                    Title     = gameTable.Title,
+                    Id = gameTable.Id,
+                    Title = gameTable.Title,
                     Platforms = gameTable.Platforms
-                };
+                };               
 
-                ConsoleDevice consoleDevice = new ConsoleDevice
+                foreach(var item in gamePlatformList)
                 {
-                    Id           = consoleDeviceTable.Id,
-                    Name         = consoleDeviceTable.Name,
-                    Usages       = consoleDeviceTable.Usages,
-                    Platform     = consoleDeviceTable.Platform,
-                    PlatformId   = consoleDeviceTable.PlatformId,
-                    Accessories  = consoleDeviceTable.Accessories,
-                    PricePerHour = consoleDeviceTable.PricePerHour
-                };
+                    if (item.GameId == gameTable.Id)
+                    {
+                        gamePrice  = item.DailyPrice;
+                        totalPrice = totalPrice + gamePrice;
+                    }
+                }                
 
-                item.PriceStrategy = new StandardPriceStrategy(); 
-                // Cria o item de aluguel e adiciona ao aluguel
+                // Criando item de aluguel
                 var rentalItem = new RentalItem
                 {
-                    Game          = game,
-                    Days          = item.Days,
-                    Quantity      = item.Quantity,
-                    ConsoleDevice = consoleDevice,
-                    PriceStrategy = item.PriceStrategy
+                    GameId   = game.Id,
+                    RentalId = rentalTable.Id                   
+                };
+
+                // Criando item table de aluguel
+                var rentalItemTable = new RentalItemTable
+                {
+                    GameId   = game.Id,
+                    RentalId = rentalTable.Id
                 };
 
                 rentalTable.Items.Add(rentalItem);
+                await _rentalService.AddRentalItemAsync(rentalItemTable);
             }
 
-            // Salva o aluguel e os itens associados no banco de dados
+            //Preço total da transação
+            totalPrice = totalPrice*viewModel.Days;
+
+            // Atribui o preço total ao ViewModel para ser mostrado na View
+            ViewBag.TotalPrice = totalPrice;
+
+            // Salva o aluguel no banco de dados
             await _rentalService.AddRentalAsync(rentalTable);
 
-            // Retorna o aluguel criado
-            return rentalTable;
+            return View(viewModel);
         }
 
         public static Client MapToClient(ClientTable clientTable)
@@ -142,6 +146,6 @@ namespace LocadoraDigital.Web.Controllers
                 Title = gameTable.Title
             };
         }
-
+        
     }
 }
