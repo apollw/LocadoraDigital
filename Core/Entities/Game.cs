@@ -1,4 +1,6 @@
-﻿namespace LocadoraDigital.Core.Entities
+﻿using LocadoraDigital.Core.States;
+
+namespace LocadoraDigital.Core.Entities
 {
     public class Game
     {
@@ -20,5 +22,9 @@
             var gamePlatform = Platforms.FirstOrDefault(gp => gp.PlatformId == platform.Id);
             return gamePlatform?.DailyPrice ?? 0m;
         }
+
+        public IGameState State { get; set; } = new AvailableState();
+        public void Rent() => State.Rent(this);
+        public void Return() => State.Return(this);
     }
 }

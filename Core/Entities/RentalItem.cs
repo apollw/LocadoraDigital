@@ -1,4 +1,6 @@
-﻿namespace LocadoraDigital.Core.Entities
+﻿using LocadoraDigital.Core.Strategies;
+
+namespace LocadoraDigital.Core.Entities
 {
     public class RentalItem
     {
@@ -15,5 +17,11 @@
         public Rental Rental { get => _rental; set => _rental = value; }
         public Game Game { get => _game; set => _game = value; }
         public ConsoleDevice ConsoleDevice { get => _consoleDevice; set => _consoleDevice = value; }
+
+        public IPriceStrategy PriceStrategy { get; set; } = new StandardPriceStrategy(); 
+        public decimal CalculatePrice()
+        {
+            return PriceStrategy.CalculatePrice(Game, Days, ConsoleDevice) * Quantity;
+        }
     }
 }

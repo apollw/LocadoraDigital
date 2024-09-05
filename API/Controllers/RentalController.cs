@@ -3,6 +3,7 @@ using LocadoraDigital.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using LocadoraDigital.Core.Interfaces.InputPorts;
 using LocadoraDigital.Infrastructure.Adapters.Mapping;
+using LocadoraDigital.Core.Strategies;
 
 namespace LocadoraDigital.Web.Controllers
 {
@@ -103,6 +104,7 @@ namespace LocadoraDigital.Web.Controllers
                     PricePerHour = consoleDeviceTable.PricePerHour
                 };
 
+                item.PriceStrategy = new StandardPriceStrategy(); 
                 // Cria o item de aluguel e adiciona ao aluguel
                 var rentalItem = new RentalItem
                 {
@@ -110,6 +112,7 @@ namespace LocadoraDigital.Web.Controllers
                     Days          = item.Days,
                     Quantity      = item.Quantity,
                     ConsoleDevice = consoleDevice,
+                    PriceStrategy = item.PriceStrategy
                 };
 
                 rentalTable.Items.Add(rentalItem);
