@@ -14,13 +14,16 @@ namespace LocadoraDigital
             builder.Services.AddSingleton<DatabaseConfig>();
             builder.Services.AddSingleton<IDbService, DbService>();
 
-            //Adicione serviços e repositórios
+            //builder.Services.AddTransient<IRentalRepository, RentalRepository>();
+            builder.Services.AddScoped<IRentalService, RentalService>();
+
+            //Adiciona serviços e repositórios
             builder.Services.AddTransient<IClientService, ClientService>();
+
             builder.Services.AddTransient<IGameService, GameService>();
             builder.Services.AddTransient<IPlatformService, PlatformService>();
             builder.Services.AddTransient<IConsoleDeviceService, ConsoleDeviceService>();
             builder.Services.AddTransient<IAccessoryService, AccessoryService>();
-
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

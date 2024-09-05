@@ -1,0 +1,45 @@
+﻿@model RentalViewModel
+
+@{
+    ViewData["Title"] = "Create Rental";
+}
+
+<h2>Alugar um Jogo</h2>
+
+<form asp-action="CreateRental" method="post">
+    <div class="form-group">
+        <label for="SelectedClientId">Selecione o Cliente:</label>
+        <select asp-for="SelectedClientId" asp-items="@(new SelectList(Model.Clients, "Id", "Name"))" class="form-control">
+            <option value="">Selecione um cliente</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Selecione os Jogos:</label>
+        <div class="checkbox-list">
+            @foreach (var game in Model.AvailableGames)
+            {
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="SelectedGameIds" value="@game.Id" id="game-@game.Id" />
+                    <label class="form-check-label" for="game-@game.Id">
+                        @game.Title
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="RentalDays">Número de Dias de Aluguel:</label>
+        <input type="number" id="RentalDays" name="RentalDays" class="form-control" min="1" placeholder="Digite o número de dias" />
+    </div>
+
+    <div class="cart-summary mt-4">
+        <h3>Carrinho:</h3>
+        <div id="totalPrice" class="mt-2">
+            <strong>Total: R$ XX,XX</strong>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Alugar</button>
+</form>
