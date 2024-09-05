@@ -11,6 +11,8 @@ namespace LocadoraDigital.Core.Interfaces.InputPorts
         Task DeleteRentalAsync(int id);
         Task UpdateRentalAsync(RentalTable client);
 
-        //public Task<RentalTable> RentGamesAsync(int clientId, List<RentalItem> rentalItems);
+        //Métodos para itens do aluguel específico
+        Task AddRentalItemAsync(RentalItemTable rentalItem);
+
     }
 }

@@ -43,5 +43,10 @@ namespace LocadoraDigital.Core.Interfaces.OutputPorts
         {
             await _dbConnection.UpdateAsync(rental);
         }
+
+        public async Task AddRentalItemAsync(RentalItemTable rentalItem)
+        {
+            await _dbConnection.InsertAsync(rentalItem);
+        }
     }
 }
